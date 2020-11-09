@@ -3,7 +3,7 @@ import java.util.Random;
 public class Alumnos extends Thread{
 
     @Override
-    public void run() {
+    public synchronized void run() {
         try{
 
             int sleepingTime = 0;

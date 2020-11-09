@@ -1,10 +1,11 @@
 public class Profesor extends Thread {
 
     @Override
-    public void run() {
+    public synchronized void run() {
 
 
         try{
+
             sleep(5000);
             System.out.println("=== Empieza la primera desinfección ===");
             notifyAll();
