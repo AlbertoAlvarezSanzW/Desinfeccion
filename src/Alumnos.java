@@ -19,6 +19,8 @@ public class Alumnos extends Thread{
             sleep(sleepingTime);
             System.out.println("Ha llegado "+ getName());
             System.out.println(getName()+" espera que el profesor le desinfecte");
+            desinfeccion.poneralaCola(this);
+
 
         }catch (InterruptedException e){
             e.printStackTrace();
